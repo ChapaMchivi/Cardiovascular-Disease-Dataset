@@ -1,7 +1,7 @@
 # Cardiovascular-Disease-Dataset
 A comprehensive dataset designed to support research and analysis related to cardiovascular diseases. It includes various attributes such as patient demographics, medical history, lifestyle factors, and clinical diagnostics. This dataset can be utilized for predictive modeling, data-driven insights, and healthcare advancements.
 
-# Problem Statement:
+## Problem Statement:
 Cardiovascular diseases (CVD) are among the leading causes of mortality worldwide, requiring early diagnosis and preventive measures to mitigate their impact. The Cardiovascular Disease Dataset (id 45547) from OpenML provides a collection of medical and lifestyle variables associated with the presence or absence of CVD. The dataset contains objective, examination, and subjective features, all recorded at the time of medical examination. These features include patient demographics (age, height, weight, gender), medical examination results (blood pressure, cholesterol, glucose levels), and lifestyle habits (smoking, alcohol consumption, physical activity).
 The primary challenge is to leverage this dataset to develop predictive models that accurately identify individuals at high risk for cardiovascular disease. Given the mixed nature of the features—objective, examination, and subjective—the dataset presents an opportunity to explore the influence of lifestyle factors alongside traditional medical indicators. Additionally, data quality considerations, including the potential biases in self-reported information and variations in measurement techniques, must be carefully addressed to ensure robust analysis.
 
@@ -12,8 +12,8 @@ The goal is to utilize this dataset to:
 4.	Enhance understanding of cardiovascular health through data-driven insights.
 By harnessing the insights from this dataset, researchers and healthcare professionals can advance early detection efforts and design targeted interventions to reduce the prevalence of cardiovascular disease globally.
 
-# Data description:
-## There are 3 types of input features:
+## Data description:
+### There are 3 types of input features:
 
 These categories describe different types of data used in the Cardiovascular Disease dataset:
 
@@ -38,7 +38,7 @@ Certain features tend to be strong predictors of cardiovascular disease. Based o
 
 Machine learning models often use these features to predict cardiovascular disease risk with high accuracy. Some studies have explored advanced techniques like cluster analysis to improve risk stratification. If you're working on a predictive model, feature selection and correlation analysis can help refine which variables are most impactful.
 
-## Features:
+### Features:
 1.	Age | Objective Feature | age | int (days)
 2.	Height | Objective Feature | height | int (cm) |
 3.	Weight | Objective Feature | weight | float (kg) |
@@ -54,8 +54,8 @@ Machine learning models often use these features to predict cardiovascular disea
 
 All of the dataset values were collected at the moment of medical examination.
 
-## Notes by Uploader to OpenML
-####	Gender: 1 - women, 2 - men
+### Notes by Uploader to OpenML
+#####	Gender: 1 - women, 2 - men
 
 ### The following is a summary of the Cardiovascular-Disease-dataset and its key characteristics:
 * Number of instances – The dataset contains 70,000 data points (rows).
@@ -79,7 +79,7 @@ All of the dataset values were collected at the moment of medical examination.
 * cardio – Target variable (0: No cardiovascular disease, 1: Has cardiovascular disease).
 
 
-## Reference:
+### Reference:
 
 Feurer, Matthias. (2023). Cardiovascular-Disease-dataset. OpenML. Retrieved from OpenML. 
 Matthias Feurer, Ph.D. candidate at the University of Freiburg, Germany. Working on automated machine learning. Creator of the python API for OpenML. Germany 2014-07-02 17:15:35
