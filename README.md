@@ -54,8 +54,6 @@ Machine learning models often use these features to predict cardiovascular disea
 
 All of the dataset values were collected at the moment of medical examination.
 
-### Notes by Uploader to OpenML
-#####	Gender: 1 - women, 2 - men
 
 ### The following is a summary of the Cardiovascular-Disease-dataset and its key characteristics:
 * Number of instances – The dataset contains 70,000 data points (rows).
