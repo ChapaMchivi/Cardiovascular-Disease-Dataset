@@ -319,9 +319,10 @@ from sklearn.model_selection import GridSearchCV
 from sklearn.feature_selection import SelectKBest, f_classif
 
 
+from sklearn.model_selection import GridSearchCV
+from sklearn.feature_selection import SelectKBest, f_classif
 
 # **Hyperparameter Tuning using GridSearchCV**
-
 param_grid = {
     "Random Forest": {
         "n_estimators": [50, 100, 200],
@@ -349,13 +350,20 @@ for name, params in param_grid.items():
 
 
 # **Feature Selection using SelectKBest**
+
 feature_selector = SelectKBest(score_func=f_classif, k=5)
 X_selected = feature_selector.fit_transform(X_train, y_train)
 
 print("\nSelected top 5 features:", X.columns[feature_selector.get_support()])
 
 
+## Output
 
+Best parameters for Random Forest: {'max_depth': 10, 'min_samples_split': 10, 'n_estimators': 100}
+Best parameters for Gradient Boosting: {'learning_rate': 0.1, 'max_depth': 3, 'n_estimators': 100}
+Best parameters for XGBoost: {'learning_rate': 0.2, 'max_depth': 3, 'n_estimators': 100}
+
+Selected top 5 features: Index(['age', 'ap_hi', 'ap_lo', 'cholesterol', 'bmi'], dtype='object')
 
 ### Reference:
 
