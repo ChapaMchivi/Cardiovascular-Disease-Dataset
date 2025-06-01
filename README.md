@@ -307,14 +307,14 @@ This visualization is valuable for exploring how blood pressure differs between 
     X = df.drop(columns=['cardio'])
     y = df['cardio']
 
-# Standardize features
+### Standardize features
     scaler = StandardScaler()
     X_scaled = scaler.fit_transform(X)
 
-# Split data
+### Split data
     X_train, X_test, y_train, y_test = train_test_split(X_scaled, y, test_size=0.2, random_state=42)
 
-# Train models
+### Train models
     models = {
         "Logistic Regression": LogisticRegression(),
         "Random Forest": RandomForestClassifier(),
