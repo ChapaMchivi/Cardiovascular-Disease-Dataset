@@ -84,13 +84,9 @@ All of the dataset values were collected at the moment of medical examination.
 ## Install required packages
 
 %pip install openml
-
-%pip install pandas 
-
-%pip install scikit-learn 
-
-%pip install matplotlib 
-
+%pip install pandas
+%pip install scikit-learn
+%pip install matplotlib
 %pip install seaborn
 
 ## Load the Data Set
