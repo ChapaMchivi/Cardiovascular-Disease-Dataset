@@ -250,7 +250,12 @@ max        1.000000      1.000000     86.776860              4.000000
 
 ![Histogram Age Distribution](https://github.com/user-attachments/assets/aa7c5b41-a65e-4724-89e8-0fa821d9b76d)
 
+This visualization presents a **histogram** of age distribution with a **kernel density estimate (KDE) overlay** to provide a smooth approximation of the probability density function. 
 
+- The **histogram** breaks down the age data into bins, showing the frequency count of individuals in different age ranges.
+- The **KDE curve** adds a smoothed representation of the distribution, helping to visualize the overall pattern beyond just the discrete bins.
+
+The age distribution peaks around **50, 55, and 60**, indicating that these ages have the highest frequency in the dataset. The visualization is part of an **Exploratory Data Analysis (EDA)** and was created using the `seaborn` and `matplotlib` libraries in Python.
 
  ## Correlation Heatmap
     plt.figure(figsize=(12, 8))
