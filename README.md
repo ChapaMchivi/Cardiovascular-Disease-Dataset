@@ -321,8 +321,7 @@ from sklearn.feature_selection import SelectKBest, f_classif
 
 # **Hyperparameter Tuning using GridSearchCV**
 
-param_grid = {
-   
+param_grid = {   
     "Random Forest": {
        
         "n_estimators": [50, 100, 200],
