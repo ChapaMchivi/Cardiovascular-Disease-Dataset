@@ -311,7 +311,7 @@ Gradient Boosting Accuracy: 0.7324
 
 XGBoost Accuracy: 0.7298
 
-
+###
 from sklearn.model_selection import GridSearchCV
 from sklearn.feature_selection import SelectKBest, f_classif
 
@@ -357,11 +357,31 @@ print("\nSelected top 5 features:", X.columns[feature_selector.get_support()])
 
 ## Output
 
-Best parameters for Random Forest: {'max_depth': 10, 'min_samples_split': 10, 'n_estimators': 100}
-Best parameters for Gradient Boosting: {'learning_rate': 0.1, 'max_depth': 3, 'n_estimators': 100}
-Best parameters for XGBoost: {'learning_rate': 0.2, 'max_depth': 3, 'n_estimators': 100}
+## Best Parameters for Machine Learning Models
 
-Selected top 5 features: Index(['age', 'ap_hi', 'ap_lo', 'cholesterol', 'bmi'], dtype='object')
+### Random Forest
+- `max_depth`: 10
+- `min_samples_split`: 10
+- `n_estimators`: 100
+
+### Gradient Boosting
+- `learning_rate`: 0.1
+- `max_depth`: 3
+- `n_estimators`: 100
+
+### XGBoost
+- `learning_rate`: 0.2
+- `max_depth`: 3
+- `n_estimators`: 100
+
+## Selected Top 5 Features
+- `age`
+- `ap_hi`
+- `ap_lo`
+- `cholesterol`
+- `bmi`
+
+
 
 ### Reference:
 
