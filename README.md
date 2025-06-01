@@ -79,16 +79,14 @@ All of the dataset values were collected at the moment of medical examination.
 * cardio – Target variable (0: No cardiovascular disease, 1: Has cardiovascular disease).
 
 
+Load the Data Set
 
-# Install required packages
+#### Install required packages
+
 %pip install openml 
-
 %pip install pandas 
-
 %pip install scikit-learn 
-
 %pip install matplotlib 
-
 %pip install seaborn
 
 
