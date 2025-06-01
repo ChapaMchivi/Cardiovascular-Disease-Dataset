@@ -283,9 +283,25 @@ A **correlation heatmap** is a visual representation of how different variables 
     plt.ylabel("Systolic Blood Pressure (ap_hi)")
     plt.show()
 
-
 ![Box Plot Systolic bp vs  CVD](https://github.com/user-attachments/assets/3f4d8e6d-cce4-4eb8-8558-da26220f2099)
 
+A **boxplot** is a useful statistical visualization for understanding the distribution of blood pressure values across different cardiovascular disease (CVD) conditions.
+
+### Key aspects of this boxplot:
+- **X-axis:** Represents the **cardiovascular disease status** (e.g., **0** for no disease, **1** for presence of disease).
+- **Y-axis:** Displays **blood pressure values**, showing how they vary across these groups.
+- **Box Representation:** Each category contains:
+  - The **interquartile range (IQR)** (the box), representing the middle 50% of values.
+  - The **median** (bold line inside the box), showing the central tendency of blood pressure for each group.
+  - The **whiskers**, which extend to the lowest and highest values within 1.5 times the IQR.
+  - **Outliers**, appearing as individual dots, indicating extreme blood pressure values outside the typical range.
+
+### Observations:
+- Individuals with **cardiovascular disease** (**CVD = 1**) generally show higher blood pressure values.
+- The median blood pressure for the disease group appears higher than the non-disease group, suggesting a potential correlation.
+- The presence of outliers might indicate individuals with significantly high blood pressure levels.
+
+This visualization is valuable for exploring how blood pressure differs between healthy and affected individuals.
 
 # **Machine Learning Models**
     X = df.drop(columns=['cardio'])
