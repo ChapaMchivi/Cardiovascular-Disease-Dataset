@@ -383,5 +383,3 @@ Matthias Feurer, Ph.D. candidate at the University of Freiburg, Germany. Working
 Creator of the Python API for OpenML. Germany, 2014-07-02 17:15:35  
 
 [Cardiovascular Disease Dataset on OpenML](https://www.openml.org/search?type=data&status=active&id=45547)
-
-
