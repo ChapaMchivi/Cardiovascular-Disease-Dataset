@@ -230,12 +230,16 @@ max        1.000000      1.000000     86.776860              4.000000
 
 
 
+## **Exploratory Data Analysis (EDA)**
+    sns.set_style("whitegrid")
 
-
-
-
-
-
+    # Histogram for Age Distribution
+    plt.figure(figsize=(10, 5))
+    sns.histplot(df['age'], bins=30, kde=True)
+    plt.title("Age Distribution")
+    plt.xlabel("Age")
+    plt.ylabel("Count")
+    plt.show()
 
 
 
@@ -247,6 +251,7 @@ max        1.000000      1.000000     86.776860              4.000000
 
 
 
+![Feature Correlation Matrix](https://github.com/user-attachments/assets/36373d78-5ed8-48ba-9f4a-78beb3d79d97)
 
 
 
@@ -254,6 +259,7 @@ max        1.000000      1.000000     86.776860              4.000000
 
 
 
+![Box Plot Systolic bp vs  CVD](https://github.com/user-attachments/assets/3f4d8e6d-cce4-4eb8-8558-da26220f2099)
 
 
 
