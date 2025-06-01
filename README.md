@@ -1,5 +1,6 @@
-# Cardiovascular-Disease-Dataset
-A comprehensive dataset designed to support research and analysis related to cardiovascular diseases. It includes various attributes such as patient demographics, medical history, lifestyle factors, and clinical diagnostics. This dataset can be utilized for predictive modeling, data-driven insights, and healthcare advancements.
+# Cardiovascular-Disease-Dataset using Machine Learning
+
+A comprehensive dataset designed to support research and analysis related to cardiovascular diseases. It includes various attributes such as patient demographics, medical history, lifestyle factors, and clinical diagnostics. This dataset can be utilized for predictive modeling, data-driven insights, and healthcare advancements.The process model is implemented in a Python script that using Logistic Regression and Random Forest model, Feature Engineering.
 
 ## Problem Statement:
 Cardiovascular diseases (CVD) are among the leading causes of mortality worldwide, requiring early diagnosis and preventive measures to mitigate their impact. The Cardiovascular Disease Dataset (id 45547) from OpenML provides a collection of medical and lifestyle variables associated with the presence or absence of CVD. The dataset contains objective, examination, and subjective features, all recorded at the time of medical examination. These features include patient demographics (age, height, weight, gender), medical examination results (blood pressure, cholesterol, glucose levels), and lifestyle habits (smoking, alcohol consumption, physical activity).
@@ -56,7 +57,6 @@ Machine learning models often use these features to predict cardiovascular disea
 
 All of the dataset values were collected at the moment of medical examination.
 
-
 ## The following is a summary of the Cardiovascular-Disease-dataset and its key characteristics:
 * Number of instances – The dataset contains 70,000 data points (rows).
 * Number of features – There are 12 attributes (columns) used for analysis.
@@ -77,6 +77,27 @@ All of the dataset values were collected at the moment of medical examination.
 * alco – Whether the person consumes alcohol (0: No, 1: Yes).
 * active – Whether the person is physically active (0: No, 1: Yes).
 * cardio – Target variable (0: No cardiovascular disease, 1: Has cardiovascular disease).
+
+
+
+# Install required packages
+%pip install openml 
+
+%pip install pandas 
+
+%pip install scikit-learn 
+
+%pip install matplotlib 
+
+%pip install seaborn
+
+
+
+
+
+
+
+
 
 
 ### Reference:
