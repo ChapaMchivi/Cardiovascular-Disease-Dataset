@@ -158,10 +158,11 @@ try:
     print("\nDataset Summary Statistics:")
     print(df.describe())
 
-## Output
-Loading dataset from local CSV...
 
-Dataset Preview:
+## Output
+### Loading dataset from local CSV...
+
+### Dataset Preview:
      age  gender  height  weight  ap_hi  ap_lo  cholesterol  gluc  smoke  \
 0  18393       2     168    62.0  110.0   80.0            1     1      0   
 1  20228       1     156    85.0  140.0   90.0            3     1      0   
@@ -176,12 +177,12 @@ Dataset Preview:
 3     0       1       1  
 4     0       0       0  
 
-Dataset Columns:
+### Dataset Columns:
 Index(['age', 'gender', 'height', 'weight', 'ap_hi', 'ap_lo', 'cholesterol',
        'gluc', 'smoke', 'alco', 'active', 'cardio'],
       dtype='object')
 
-Missing Values Summary:
+### Missing Values Summary:
 age            0
 gender         0
 height         0
@@ -196,7 +197,7 @@ active         0
 cardio         0
 dtype: int64
 
-Dataset Summary Statistics:
+### Dataset Summary Statistics:
                 age        gender        height        weight         ap_hi  \
 count  68664.000000  68664.000000  68664.000000  68664.000000  68664.000000   
 mean      52.830260      1.348669    164.398142     74.040733    126.600504   
