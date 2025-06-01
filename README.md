@@ -263,11 +263,17 @@ The age distribution peaks around **50, 55, and 60**, indicating that these ages
     plt.title("Feature Correlation Matrix")
     plt.show()
 
-
-
 ![Feature Correlation Matrix](https://github.com/user-attachments/assets/36373d78-5ed8-48ba-9f4a-78beb3d79d97)
 
+A **correlation heatmap** is a visual representation of how different variables in a dataset are related to each other. It displays correlation coefficients—values ranging from **-1 to +1**—which indicate the strength and direction of relationships between variables.
 
+### Key aspects of the heatmap:
+- **Color Gradient**: The heatmap uses colors to represent correlation values. Typically:
+  - **Dark red/orange** (closer to +1) indicates a strong **positive correlation**, meaning as one variable increases, the other also increases.
+  - **Dark blue/purple** (closer to -1) indicates a strong **negative correlation**, meaning as one variable increases, the other decreases.
+  - **Neutral colors** (closer to 0) indicate **weak or no correlation** between variables.
+- **Diagonal Line**: The heatmap often includes a diagonal of perfect correlation (**values of +1**), where each variable is perfectly correlated with itself.
+- **Insights**: Helps identify relationships between features—useful for feature selection, removing redundant data, or understanding dependencies.
 
 ## Boxplot for Blood Pressure vs. Cardiovascular Disease
     plt.figure(figsize=(10, 5))
