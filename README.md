@@ -1,8 +1,6 @@
 # Cardiovascular-Disease-Dataset
 A comprehensive dataset designed to support research and analysis related to cardiovascular diseases. It includes various attributes such as patient demographics, medical history, lifestyle factors, and clinical diagnostics. This dataset can be utilized for predictive modeling, data-driven insights, and healthcare advancements.
 
-Dataset retrieved from OpenML Api: https://www.openml.org/search?type=data&status=active&id=45547
-
 ## Problem Statement:
 Cardiovascular diseases (CVD) are among the leading causes of mortality worldwide, requiring early diagnosis and preventive measures to mitigate their impact. The Cardiovascular Disease Dataset (id 45547) from OpenML provides a collection of medical and lifestyle variables associated with the presence or absence of CVD. The dataset contains objective, examination, and subjective features, all recorded at the time of medical examination. These features include patient demographics (age, height, weight, gender), medical examination results (blood pressure, cholesterol, glucose levels), and lifestyle habits (smoking, alcohol consumption, physical activity).
 The primary challenge is to leverage this dataset to develop predictive models that accurately identify individuals at high risk for cardiovascular disease. Given the mixed nature of the features—objective, examination, and subjective—the dataset presents an opportunity to explore the influence of lifestyle factors alongside traditional medical indicators. Additionally, data quality considerations, including the potential biases in self-reported information and variations in measurement techniques, must be carefully addressed to ensure robust analysis.
@@ -13,6 +11,8 @@ The goal is to utilize this dataset to:
 3.	Analyze the interplay between medical examination results and lifestyle factors.
 4.	Enhance understanding of cardiovascular health through data-driven insights.
 By harnessing the insights from this dataset, researchers and healthcare professionals can advance early detection efforts and design targeted interventions to reduce the prevalence of cardiovascular disease globally.
+
+Dataset retrieved from OpenML Api: https://www.openml.org/search?type=data&status=active&id=45547
 
 ## Data description:
 ### There are 3 types of input features:
