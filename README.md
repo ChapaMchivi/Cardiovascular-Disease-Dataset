@@ -398,8 +398,6 @@ X_selected = feature_selector.fit_transform(X_train, y_train)
 
 print("\nSelected top 5 features:", X.columns[feature_selector.get_support()])
 
-
-
 ## Output
 
 ## Best Parameters for Machine Learning Models
@@ -426,6 +424,31 @@ print("\nSelected top 5 features:", X.columns[feature_selector.get_support()])
 - `cholesterol`
 - `bmi`
 
+
+The output of the code presents the results of **hyperparameter tuning** and **feature selection** for three machine learning models—Random Forest, Gradient Boosting, and XGBoost. 
+
+### **Hyperparameter Tuning Results**
+Using **GridSearchCV**, the best parameters for each model were found:
+- **Random Forest:** `max_depth=10`, `min_samples_split=2`, `n_estimators=100`
+- **Gradient Boosting:** `learning_rate=0.1`, `max_depth=3`, `n_estimators=100`
+- **XGBoost:** `learning_rate=0.2`, `max_depth=3`, `n_estimators=100`
+
+These optimized hyperparameters improve model performance by balancing complexity and overfitting.
+
+### **Feature Selection Results**
+Using **SelectKBest**, the top **5 most relevant features** for predicting `cardio` were chosen:
+- **`age`**: The person's age
+- **`ap_hi`**: Systolic blood pressure
+- **`ap_lo`**: Diastolic blood pressure
+- **`cholesterol`**: Cholesterol level
+- **`bmi`**: Body Mass Index (BMI)
+
+This indicates that these features have the most statistical significance in predicting cardiovascular disease.
+
+### **Key Insights**
+- Hyperparameter tuning refined each model to its best possible configuration for accuracy.
+- Selecting the top 5 features helps reduce complexity while maintaining prediction strength.
+- Age, blood pressure, cholesterol, and BMI are crucial indicators for cardiovascular disease risk.
 
 # Reference
 
