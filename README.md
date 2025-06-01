@@ -105,8 +105,7 @@ All of the dataset values were collected at the moment of medical examination.
 * from sklearn.linear_model import LogisticRegression
 * from sklearn.ensemble import RandomForestClassifier, GradientBoostingClassifier
 * from xgboost import XGBClassifier  # Added XGBoost
-* from sklearn.decomposition import PCA
-* from sklearn.cluster import KMeans
+
 
 ## Define dataset ID
 dataset_id = 45547
