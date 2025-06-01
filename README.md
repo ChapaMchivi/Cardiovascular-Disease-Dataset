@@ -6,7 +6,7 @@ A comprehensive dataset designed to support research and analysis related to car
 Cardiovascular diseases (CVD) are among the leading causes of mortality worldwide, requiring early diagnosis and preventive measures to mitigate their impact. The Cardiovascular Disease Dataset (id 45547) from OpenML provides a collection of medical and lifestyle variables associated with the presence or absence of CVD. The dataset contains objective, examination, and subjective features, all recorded at the time of medical examination. These features include patient demographics (age, height, weight, gender), medical examination results (blood pressure, cholesterol, glucose levels), and lifestyle habits (smoking, alcohol consumption, physical activity).
 The primary challenge is to leverage this dataset to develop predictive models that accurately identify individuals at high risk for cardiovascular disease. Given the mixed nature of the features—objective, examination, and subjective—the dataset presents an opportunity to explore the influence of lifestyle factors alongside traditional medical indicators. Additionally, data quality considerations, including the potential biases in self-reported information and variations in measurement techniques, must be carefully addressed to ensure robust analysis.
 
-The goal is to utilize this dataset to:
+### The goal is to utilize this dataset to:
 1.	Identify key predictors of cardiovascular disease.
 2.	Develop predictive models to support early diagnosis and intervention.
 3.	Analyze the interplay between medical examination results and lifestyle factors.
