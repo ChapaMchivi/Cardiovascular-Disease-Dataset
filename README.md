@@ -267,16 +267,6 @@ The age distribution peaks around **50, 55, and 60**, indicating that these ages
 
 ![Feature Correlation Matrix](https://github.com/user-attachments/assets/36373d78-5ed8-48ba-9f4a-78beb3d79d97)
 
-This visualization depicts a **histogram** of age distribution, enhanced with a **kernel density estimate (KDE) overlay** to provide a smooth representation of the probability density function.
-
-### Key elements:
-- The **histogram** divides age values into bins, visually representing how frequently different age groups appear in the dataset.
-- The **KDE curve** offers a smoothed trend line, helping to observe overall distribution patterns rather than just discrete bars.
-
-### Observations:
-- The age distribution features peaks around **45, 50, 55, and 60 years old**, indicating that individuals within these age groups are the most common.
-- The histogram suggests possible **right skewness**, meaning younger individuals might be slightly more prevalent.
-- The visualization was created using the `seaborn` and `matplotlib` Python libraries, as seen in the accompanying code snippet.
 
 
 ## Boxplot for Blood Pressure vs. Cardiovascular Disease
