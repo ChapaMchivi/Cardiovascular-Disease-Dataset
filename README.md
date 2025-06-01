@@ -302,13 +302,16 @@ max        1.000000      1.000000     86.776860              4.000000
         model.fit(X_train, y_train)
         accuracy = model.score(X_test, y_test)
         print(f"{name} Accuracy: {accuracy:.4f}")
-except Exception as e: print(f"\nError fetching dataset: {e}")
+except Exception as e print(f"\nError fetching dataset: {e}")
 
 
 ## Output
 Logistic Regression Accuracy: 0.7254
+
 Random Forest Accuracy: 0.7074
+
 Gradient Boosting Accuracy: 0.7324
+
 XGBoost Accuracy: 0.7298
 
 
