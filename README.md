@@ -339,8 +339,11 @@ for name, params in param_grid.items():
     best_models[name] = grid_search.best_estimator_
     print(f"Best parameters for {name}: {grid_search.best_params_}")
 
-# **Feature Selection using SelectKBest**
+
+### **Feature Selection using SelectKBest**
+
 feature_selector = SelectKBest(score_func=f_classif, k=5)
+
 X_selected = feature_selector.fit_transform(X_train, y_train)
 
 print("\nSelected top 5 features:", X.columns[feature_selector.get_support()])
