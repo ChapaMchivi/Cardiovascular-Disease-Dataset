@@ -1,5 +1,8 @@
 # Cardiovascular-Disease-Dataset using Machine Learning
 
+![adjust the image to2 ](https://github.com/user-attachments/assets/d58a3522-6ca1-4bd2-949a-824bb6f2cf78)
+
+
 A comprehensive dataset designed to support research and analysis related to cardiovascular diseases. It includes various attributes such as patient demographics, medical history, lifestyle factors, and clinical diagnostics. This dataset can be utilized for predictive modeling, data-driven insights, and healthcare advancements.The process model is implemented in a Python script that using Logistic Regression and Random Forest model, Feature Engineering.
 
 ## Problem Statement:
