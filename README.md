@@ -425,3 +425,38 @@ print("\nSelected top 5 features:", X.columns[feature_selector.get_support()])
 - `bmi`
 
 
+# The output of the code presents the results of **hyperparameter tuning** and **feature selection** for three machine learning models—Random Forest, Gradient Boosting, and XGBoost. 
+
+### **Hyperparameter Tuning Results**
+Using **GridSearchCV**, the best parameters for each model were found:
+- **Random Forest:** `max_depth=10`, `min_samples_split=2`, `n_estimators=100`
+- **Gradient Boosting:** `learning_rate=0.1`, `max_depth=3`, `n_estimators=100`
+- **XGBoost:** `learning_rate=0.2`, `max_depth=3`, `n_estimators=100`
+
+These optimized hyperparameters improve model performance by balancing complexity and overfitting.
+
+### **Feature Selection Results**
+Using **SelectKBest**, the top **5 most relevant features** for predicting `cardio` were chosen:
+- **`age`**: The person's age
+- **`ap_hi`**: Systolic blood pressure
+- **`ap_lo`**: Diastolic blood pressure
+- **`cholesterol`**: Cholesterol level
+- **`bmi`**: Body Mass Index (BMI)
+
+This indicates that these features have the most statistical significance in predicting cardiovascular disease.
+
+### **Key Insights**
+- Hyperparameter tuning refined each model to its best possible configuration for accuracy.
+- Selecting the top 5 features helps reduce complexity while maintaining prediction strength.
+- Age, blood pressure, cholesterol, and BMI are crucial indicators for cardiovascular disease risk.
+
+# Reference
+
+Feurer, Matthias. (2023). Cardiovascular-Disease-dataset. OpenML. Retrieved from OpenML.  
+Matthias Feurer, Ph.D. candidate at the University of Freiburg, Germany. Working on automated machine learning.  
+Creator of the Python API for OpenML. Germany, 2014-07-02 17:15:35  
+
+[Cardiovascular Disease Dataset on OpenML](https://www.openml.org/search?type=data&status=active&id=45547)
+
+
+
