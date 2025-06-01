@@ -79,8 +79,6 @@ All of the dataset values were collected at the moment of medical examination.
 * cardio – Target variable (0: No cardiovascular disease, 1: Has cardiovascular disease).
 
 
-
-
 ## Install required packages
 
 * %pip install openml
@@ -314,7 +312,6 @@ Gradient Boosting Accuracy: 0.7324
 XGBoost Accuracy: 0.7298
 
 
-
 from sklearn.model_selection import GridSearchCV
 from sklearn.feature_selection import SelectKBest, f_classif
 
@@ -323,6 +320,7 @@ from sklearn.model_selection import GridSearchCV
 from sklearn.feature_selection import SelectKBest, f_classif
 
 # **Hyperparameter Tuning using GridSearchCV**
+
 param_grid = {
     "Random Forest": {
         "n_estimators": [50, 100, 200],
