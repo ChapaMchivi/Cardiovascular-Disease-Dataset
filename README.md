@@ -105,10 +105,8 @@ All of the dataset values were collected at the moment of medical examination.
 * from sklearn.decomposition import PCA
 * from sklearn.cluster import KMeans
 
-# Define dataset ID
-
+## Define dataset ID
 dataset_id = 45547
-
 csv_filename = "cardiovascular_disease_dataset.csv"
 
 try:
