@@ -247,7 +247,11 @@ max        1.000000      1.000000     86.776860              4.000000
 
 
 
-
+ ## Correlation Heatmap
+    plt.figure(figsize=(12, 8))
+    sns.heatmap(df.corr(), annot=True, cmap="coolwarm", linewidths=0.5)
+    plt.title("Feature Correlation Matrix")
+    plt.show()
 
 
 
@@ -256,15 +260,50 @@ max        1.000000      1.000000     86.776860              4.000000
 
 
 
-
+## Boxplot for Blood Pressure vs. Cardiovascular Disease
+    plt.figure(figsize=(10, 5))
+    sns.boxplot(x=df['cardio'], y=df['ap_hi'], hue=df['cardio'], palette="Set2", legend=False)
+    plt.title("Systolic Blood Pressure vs. Cardiovascular Disease")
+    plt.xlabel("Cardiovascular Disease (0 = No, 1 = Yes)")
+    plt.ylabel("Systolic Blood Pressure (ap_hi)")
+    plt.show()
 
 
 ![Box Plot Systolic bp vs  CVD](https://github.com/user-attachments/assets/3f4d8e6d-cce4-4eb8-8558-da26220f2099)
 
 
+## **Machine Learning Models**
+    X = df.drop(columns=['cardio'])
+    y = df['cardio']
 
+# Standardize features
+    scaler = StandardScaler()
+    X_scaled = scaler.fit_transform(X)
 
+# Split data
+    X_train, X_test, y_train, y_test = train_test_split(X_scaled, y, test_size=0.2, random_state=42)
 
+# Train models
+    models = {
+        "Logistic Regression": LogisticRegression(),
+        "Random Forest": RandomForestClassifier(),
+        "Gradient Boosting": GradientBoostingClassifier(),
+        "XGBoost": XGBClassifier()
+    }
+
+    for name, model in models.items():
+        model.fit(X_train, y_train)
+        accuracy = model.score(X_test, y_test)
+        print(f"{name} Accuracy: {accuracy:.4f}")
+
+except Exception as e:
+    print(f"\nError fetching dataset: {e}")
+
+## Output
+Logistic Regression Accuracy: 0.7254
+Random Forest Accuracy: 0.7074
+Gradient Boosting Accuracy: 0.7324
+XGBoost Accuracy: 0.7298
 
 
 ### Reference:
