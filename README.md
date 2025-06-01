@@ -305,7 +305,7 @@ This visualization is valuable for exploring how blood pressure differs between 
     X = df.drop(columns=['cardio'])
     y = df['cardio']
 
-### *Standardize features*
+### Standardize features
     scaler = StandardScaler()
     X_scaled = scaler.fit_transform(X)
 
@@ -326,7 +326,7 @@ This visualization is valuable for exploring how blood pressure differs between 
         print(f"{name} Accuracy: {accuracy:.4f}")
 
 
-## Output
+### Output
 
 - **Logistic Regression Accuracy:** 0.7254
 - **Random Forest Accuracy:** 0.7074
