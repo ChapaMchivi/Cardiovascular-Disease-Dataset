@@ -303,70 +303,44 @@ max        1.000000      1.000000     86.776860              4.000000
 
 
 ## Output
-Logistic Regression Accuracy: 0.7254
 
-Random Forest Accuracy: 0.7074
-
-Gradient Boosting Accuracy: 0.7324
-
-XGBoost Accuracy: 0.7298
-
-###
-from sklearn.model_selection import GridSearchCV
-from sklearn.feature_selection import SelectKBest, f_classif
-
-
-from sklearn.model_selection import GridSearchCV
-from sklearn.feature_selection import SelectKBest, f_classif
+- **Logistic Regression Accuracy:** 0.7254
+- **Random Forest Accuracy:** 0.7074
+- **Gradient Boosting Accuracy:** 0.7324
+- **XGBoost Accuracy:** 0.7298
 
 # **Hyperparameter Tuning using GridSearchCV**
 
-param_grid = {   
+from sklearn.model_selection import GridSearchCV
+from sklearn.feature_selection import SelectKBest, f_classif
+
+param_grid = {
     "Random Forest": {
-       
         "n_estimators": [50, 100, 200],
-        
         "max_depth": [None, 10, 20],
-       
         "min_samples_split": [2, 5, 10]
     },
-   
     "Gradient Boosting": {
-        
         "learning_rate": [0.01, 0.1, 0.2],
-       
         "n_estimators": [50, 100, 200],
-        
         "max_depth": [3, 5, 7]
     },
-    
     "XGBoost": {
-        
         "learning_rate": [0.01, 0.1, 0.2],
-        
         "n_estimators": [50, 100, 200],
-       
         "max_depth": [3, 5, 7]
     }
 }
 
 best_models = {}
-
 for name, params in param_grid.items():
-    
     grid_search = GridSearchCV(models[name], params, cv=5, scoring="accuracy", n_jobs=-1)
-   
     grid_search.fit(X_train, y_train)
-   
     best_models[name] = grid_search.best_estimator_
-  
     print(f"Best parameters for {name}: {grid_search.best_params_}")
 
-
 # **Feature Selection using SelectKBest**
-
 feature_selector = SelectKBest(score_func=f_classif, k=5)
-
 X_selected = feature_selector.fit_transform(X_train, y_train)
 
 print("\nSelected top 5 features:", X.columns[feature_selector.get_support()])
