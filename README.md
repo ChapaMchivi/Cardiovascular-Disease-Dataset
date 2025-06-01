@@ -109,9 +109,8 @@ All of the dataset values were collected at the moment of medical examination.
 dataset_id = 45547
 csv_filename = "cardiovascular_disease_dataset.csv"
 
-# Check if dataset exists locally to avoid re-downloading
+### Check if dataset exists locally to avoid re-downloading
 try:
-
     if os.path.exists(csv_filename):
         
         print("Loading dataset from local CSV...")
