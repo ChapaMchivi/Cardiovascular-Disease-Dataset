@@ -105,7 +105,58 @@ All of the dataset values were collected at the moment of medical examination.
 * from sklearn.decomposition import PCA
 * from sklearn.cluster import KMeans
 
+# Define dataset ID
+dataset_id = 45547
+csv_filename = "cardiovascular_disease_dataset.csv"
 
+try:
+    # Check if dataset exists locally to avoid re-downloading
+    if os.path.exists(csv_filename):
+        print("Loading dataset from local CSV...")
+        df = pd.read_csv(csv_filename)
+    else:
+        print("Fetching dataset from OpenML...")
+        dataset = openml.datasets.get_dataset(dataset_id)
+        df, _, _, _ = dataset.get_data()
+        df.to_csv(csv_filename, index=False)  # Save locally
+
+    # Display first few rows
+    print("\nDataset Preview:")
+    print(df.head())
+
+    # Show column names for verification
+    print("\nDataset Columns:")
+    print(df.columns)
+
+    # Check for missing values
+    print("\nMissing Values Summary:")
+    print(df.isnull().sum())
+
+    # **Data Cleaning and Corrections**
+    # Convert age from days to years
+    df['age'] = df['age'] // 365  
+
+    # Impute missing values using median strategy (Updated to avoid FutureWarning)
+    df = df.fillna(df.median())
+
+    # Convert categorical column for efficiency
+    df = df.astype({"cardio": "int8"})  
+
+    # **Feature Engineering**
+    df['bmi'] = df['weight'] / (df['height'] / 100) ** 2
+    df['blood_pressure_ratio'] = df['ap_hi'] / df['ap_lo']
+
+    # Filter out unrealistic blood pressure values
+    df = df[(df['ap_hi'] > 50) & (df['ap_hi'] < 250)]
+    df = df[(df['ap_lo'] > 30) & (df['ap_lo'] < 180)]
+
+    # Filter out unrealistic height and weight values
+    df = df[(df['height'] > 100) & (df['height'] < 230)]
+    df = df[(df['weight'] > 30) & (df['weight'] < 150)]
+
+    # Display basic statistics of numerical features
+    print("\nDataset Summary Statistics:")
+    print(df.describe())
 
 
 
