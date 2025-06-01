@@ -105,12 +105,12 @@ All of the dataset values were collected at the moment of medical examination.
 * from sklearn.decomposition import PCA
 * from sklearn.cluster import KMeans
 
-# Define dataset ID
+## Define dataset ID
 dataset_id = 45547
 csv_filename = "cardiovascular_disease_dataset.csv"
 
 try:
-    # Check if dataset exists locally to avoid re-downloading
+    ### Check if dataset exists locally to avoid re-downloading
     if os.path.exists(csv_filename):
         print("Loading dataset from local CSV...")
         df = pd.read_csv(csv_filename)
