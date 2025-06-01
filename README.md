@@ -66,7 +66,7 @@ All of the dataset values were collected at the moment of medical examination.
 * Number of numeric features – 5 features are numeric (e.g., age, blood pressure).
 * Number of symbolic features – 7 features are symbolic/categorical (e.g., gender, smoking status).
 
-## This dataset is clean and well-structured, making it a great candidate for machine learning models. The first few rows of the Cardiovascular-Disease-dataset. Here's a breakdown of what each column represents:
+### This dataset is clean and well-structured, making it a great candidate for machine learning models. The first few rows of the Cardiovascular-Disease-dataset. Here's a breakdown of what each column represents:
 * age – The person's age.
 * gender – Likely encoded as 1 (male) and 2 (female).
 * height & weight – Physical measurements.
