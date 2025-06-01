@@ -375,7 +375,8 @@ print("\nSelected top 5 features:", X.columns[feature_selector.get_support()])
 - `cholesterol`
 - `bmi`
 
-### Reference
+
+# Reference
 
 Feurer, Matthias. (2023). Cardiovascular-Disease-dataset. OpenML. Retrieved from OpenML.  
 Matthias Feurer, Ph.D. candidate at the University of Freiburg, Germany. Working on automated machine learning.  
