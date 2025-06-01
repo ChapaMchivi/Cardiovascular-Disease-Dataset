@@ -239,6 +239,8 @@ max        1.000000      1.000000     86.776860              4.000000
 
 
 
+![Histogram Age Distribution](https://github.com/user-attachments/assets/aa7c5b41-a65e-4724-89e8-0fa821d9b76d)
+
 
 
 
