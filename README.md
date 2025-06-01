@@ -309,11 +309,13 @@ max        1.000000      1.000000     86.776860              4.000000
 - **Gradient Boosting Accuracy:** 0.7324
 - **XGBoost Accuracy:** 0.7298
 
-# **Hyperparameter Tuning using GridSearchCV**
+# Hyperparameter Tuning and Feature Selection
 
+```python
 from sklearn.model_selection import GridSearchCV
 from sklearn.feature_selection import SelectKBest, f_classif
 
+# **Hyperparameter Tuning using GridSearchCV**
 param_grid = {
     "Random Forest": {
         "n_estimators": [50, 100, 200],
@@ -339,14 +341,12 @@ for name, params in param_grid.items():
     best_models[name] = grid_search.best_estimator_
     print(f"Best parameters for {name}: {grid_search.best_params_}")
 
-
-### **Feature Selection using SelectKBest**
-
+# **Feature Selection using SelectKBest**
 feature_selector = SelectKBest(score_func=f_classif, k=5)
-
 X_selected = feature_selector.fit_transform(X_train, y_train)
 
 print("\nSelected top 5 features:", X.columns[feature_selector.get_support()])
+
 
 
 ## Output
