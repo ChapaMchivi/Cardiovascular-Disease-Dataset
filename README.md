@@ -79,9 +79,9 @@ All of the dataset values were collected at the moment of medical examination.
 * cardio – Target variable (0: No cardiovascular disease, 1: Has cardiovascular disease).
 
 
-## Load the Data Set
 
-#### Install required packages
+
+## Install required packages
 
 %pip install openml
 
@@ -93,9 +93,21 @@ All of the dataset values were collected at the moment of medical examination.
 
 %pip install seaborn
 
+## Load the Data Set
 
-
-
+import openml
+import pandas as pd
+import os
+import matplotlib.pyplot as plt
+import seaborn as sns
+from scipy.stats import ttest_ind, chi2_contingency, f_oneway
+from sklearn.preprocessing import StandardScaler
+from sklearn.model_selection import train_test_split
+from sklearn.linear_model import LogisticRegression
+from sklearn.ensemble import RandomForestClassifier, GradientBoostingClassifier
+from xgboost import XGBClassifier  # Added XGBoost
+from sklearn.decomposition import PCA
+from sklearn.cluster import KMeans
 
 
 
