@@ -279,7 +279,7 @@ max        1.000000      1.000000     86.776860              4.000000
 ![Box Plot Systolic bp vs  CVD](https://github.com/user-attachments/assets/3f4d8e6d-cce4-4eb8-8558-da26220f2099)
 
 
-## **Machine Learning Models**
+# **Machine Learning Models**
     X = df.drop(columns=['cardio'])
     y = df['cardio']
 
@@ -302,8 +302,6 @@ max        1.000000      1.000000     86.776860              4.000000
         model.fit(X_train, y_train)
         accuracy = model.score(X_test, y_test)
         print(f"{name} Accuracy: {accuracy:.4f}")
-except Exception as e:
-## print(f"\nError fetching dataset: {e}")
 
 
 ## Output
